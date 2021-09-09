@@ -1,0 +1,32 @@
+{
+  "name": "worldtrip",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@chakra-ui/core": "^0.8.0",
+    "@chakra-ui/react": "^1.6.7",
+    "@emotion/react": "^11.4.1",
+    "@emotion/styled": "^11.3.0",
+    "@fontsource/poppins": "^4.5.0",
+    "axios": "^0.21.4",
+    "framer-motion": "^4.1.17",
+    "json-server": "^0.16.3",
+    "next": "11.1.2",
+    "react": "17.0.2",
+    "react-dom": "17.0.2",
+    "swiper": "^7.0.3"
+  },
+  "devDependencies": {
+    "@types/node": "^16.7.10",
+    "@types/react": "^17.0.19",
+    "eslint": "7.32.0",
+    "eslint-config-next": "11.1.2",
+    "typescript": "^4.4.2"
+  }
+}
