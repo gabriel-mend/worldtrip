@@ -37,6 +37,9 @@ export default function Continent({ continent }: ContinentProps) {
       <Container>
         <SimpleGrid  templateColumns="1fr 1fr" gridGap="70px">
           <Text color="#47585B" fontSize="24px" lineHeight="36px" textAlign="justify">{continent.content}</Text>
+          <Box>
+            
+          </Box>
         </SimpleGrid>
       </Container>
     </Flex>
