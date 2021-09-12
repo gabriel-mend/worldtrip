@@ -34,7 +34,7 @@ export default function Home({ data }: HomeProps) {
       <Navbar />
       <Banner />
       <Container>
-        <SimpleGrid templateColumns="repeat(5, 1fr)" spacingX="40px" margin="100px 0 80px">
+        <SimpleGrid templateColumns={["repeat(2, 1fr)", "repeat(5, 1fr)"]} spacingX="40px" margin="100px 0 80px">
           <TravelType src="cocktail.svg">
             vida noturna
           </TravelType>

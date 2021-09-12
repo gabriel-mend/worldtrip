@@ -12,6 +12,7 @@ export function Container ({ children }: ContainerProps) {
       maxW="1160px"
       margin="0 auto"
       position="relative"
+      padding={["0 15px", "auto"]}
     >
       {children}
     </Box>

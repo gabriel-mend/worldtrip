@@ -8,8 +8,9 @@ export function Navbar() {
   
   return (
     <Flex
-      h="100px"
+      h={["50px", "100px"]}
       w="100%"
+      padding="15px 0"
       background="#F5F8FA"
       alignItems="center"
       justifyContent="center"
@@ -30,7 +31,7 @@ export function Navbar() {
             </Link>
           )}
         </Box>
-        <Image src='/Logo.svg' margin="0 auto"/>
+        <Image src='/Logo.svg' margin="0 auto" height={["20px", "auto"]}/>
       </Container>
     </Flex>
   )
