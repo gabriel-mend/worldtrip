@@ -22,31 +22,31 @@ export default function Continent({ continent }: ContinentProps) {
     >
       <Navbar />
       <Flex 
-        h="500px" 
+        h={["150px", "500px"]}
         background="url('/cover.png')"
         backgroundSize="cover"
         backgroundPosition="center"
       >
         <Container>
-          <Box h="100%" display="flex" alignItems="flex-end">
-            <Heading color="#fff" marginBottom="50px">{continent.title}</Heading>
+          <Box h="100%" display="flex" alignItems={["center", "flex-end"]} justifyContent={["center", "inherit"]}>
+            <Heading color="#fff" marginBottom={["0","50px"]}>{continent.title}</Heading>
           </Box>
         </Container>
       </Flex>
       <Container>
-        <SimpleGrid  templateColumns="1.5fr 1fr" gridGap="70px" margin="80px 0">
-          <Text color="#47585B" fontSize="24px" lineHeight="36px" textAlign="justify">{continent.content}</Text>
+        <SimpleGrid  templateColumns={["1fr", "1.5fr 1fr"]} gridGap={["16px", "70px"]} margin={["24px 0", "80px 0"]}>
+          <Text color="#47585B" fontSize={["14px", "24px"]} lineHeight={["21px", "36px"]} textAlign="justify">{continent.content}</Text>
           <Flex justifyContent="space-between" alignItems="center">
             <Box textAlign="center">
               <Heading
                 color="#FFBA08"
-                fontSize="48px"
+                fontSize={["24px", "48px"]}
               >              
                 {continent.countries}
               </Heading>
               <Text
                 color="#47585B" 
-                fontSize="24px"
+                fontSize={["18px", "24px"]}
               >
                 países
               </Text>
@@ -54,13 +54,13 @@ export default function Continent({ continent }: ContinentProps) {
             <Box textAlign="center">
               <Heading
                 color="#FFBA08"
-                fontSize="48px"
+                fontSize={["24px", "48px"]}
               >              
                 {continent.languages}
               </Heading>
               <Text
                 color="#47585B" 
-                fontSize="24px"
+                fontSize={["18px", "24px"]}
               >
                 línguas
               </Text>
@@ -68,13 +68,13 @@ export default function Continent({ continent }: ContinentProps) {
             <Box textAlign="center">
               <Heading
                 color="#FFBA08"
-                fontSize="48px"
+                fontSize={["24px", "48px"]}
               >              
                 {continent.cidades}
               </Heading>
               <Text
                 color="#47585B" 
-                fontSize="24px"
+                fontSize={["18px", "24px"]}
               >
                 cidades
               </Text>
@@ -84,9 +84,9 @@ export default function Continent({ continent }: ContinentProps) {
       </Container>
       <Container>
         <Heading>Cidades {continent.cidades}</Heading>
-        <SimpleGrid templateColumns="1fr 1fr 1fr 1fr" gridGap="45px" margin="40px 0">
+        <SimpleGrid templateColumns={["1fr", "1fr 1fr 1fr 1fr"]} gridGap="45px" margin={["16px 0", "40px 0"]}>
           <Box borderRadius="4px">
-            <Image src="/londres.png" />
+            <Image src="/londres.png" w="100%"/>
             <Box position="relative" background="#fff" border="1px solid rgba(255, 186, 8, 0.5);" padding="16px 24px">
               <Text fontSize="20px" marginBottom="12px" fontWeight="600" color="#47585B">Londres</Text>
               <Text fontSize="16px" fontWeight="500" color="#999999">Reino Unido</Text>
